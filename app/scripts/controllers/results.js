@@ -8,13 +8,7 @@
  * Controller of the lendMeApp
  */
 angular.module('lendMeApp')
-  .controller('ResultsCtrl', ['$scope', '$http', function ($scope, $http) {
-    $http.get("mocks/searchresults.js")
-    .success(function(results){
-    	$scope.results=results.results;
-    	console.log(results);
-    })
-    .error(function(data){
-    	$scope.results="Juan failed";
-    })
+  .controller('ResultsCtrl', ['$scope', '$http', "Search", function ($scope, $http, Search) {
+    var foo = Search.getResults();
+    $scope.results=foo.results;
   }]);

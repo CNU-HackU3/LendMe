@@ -1,16 +1,27 @@
 <div class="container">
 	<ul class="list-group">
-		<li class="list-group-item" ng-repeat="result in results">
-			<div class="row">
-				<div class="col-xs-4">
-					<img ng-src="{{result.img}}" class="img-responsive"/>
-				</div>
-				<div class="col-xs-8">
-					<div class="row">
-						<h3 class="item-title">{{result.name}}</h3>
+		<li class="col-sm-6 remove-bullet" ng-repeat="result in results" style="margin-top:20px">
+			<div class="clearfix list-group-item hover-color img-rounded">
+				<div ng-if="$index % 2 === 0" class="visible-sm clearfix"></div>
+				<div class="row">
+					<div class="col-xs-4">
+						<img ng-src="{{result.item_image}}" class="img-responsive"/>
 					</div>
-					<div class="row">
-						<p>{{result.desc}}</p>
+					<div class="col-xs-8">
+						<div class="row">
+							<h3 class="item-title">{{result.item_name}}</h3>
+						</div>
+						<div class="row">
+							<p>{{result.item_description}}</p>
+						</div>
+						<div class="row">
+							<div class="col-xs-6">
+								<p class="duration">{{result.lend_duration}} max.</p>
+							</div>
+							<div class="col-xs-6">
+								<p class="duration">{{result.min_rep_required}} rep min.</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

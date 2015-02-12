@@ -9,13 +9,7 @@
  */
 angular.module('lendMeApp')
   .controller('MainCtrl', ['$scope','Search', function ($scope, Search) {
-
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-
+    
     $scope.submitSearch = function() {
     	Search.listingsMethod($scope.search)
     }

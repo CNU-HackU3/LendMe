@@ -85,3 +85,20 @@ body {
 .item-title{
   margin-top:0px;
 }
+
+.duration{
+  color:rgba(0,0,0,0.6);
+  font-size:12px;
+}
+
+.hover-color:hover{
+  background-color:#E6E6E6;
+}
+
+.item-template{
+  margin:0 15px;
+}
+
+.remove-bullet{
+  list-style:none;
+}
