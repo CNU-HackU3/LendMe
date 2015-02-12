@@ -81,3 +81,7 @@ body {
     border-bottom: 0;
   }
 }
+
+.item-title{
+  margin-top:0px;
+}
