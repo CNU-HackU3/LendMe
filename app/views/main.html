@@ -1,13 +1,31 @@
 <div class="container">
-  <div class="row" style="padding-top:20px">
-    <div class="col-md-6 col-md-offset-3">
-        <a href="landingpage.html">
-          <img src="logo-large.png" alt="LendMe Logo" class="img-responsive">
+  <div class="row" style="padding-top:50px">
+    <div class="col-md-12">
+        <a href="#/main.html">
+          <img src="images/logo-large.png" alt="LendMe Logo" class="img-responsive center-block">
         </a>
     </div>
   </div>
   <div class="row">
     <div class="col-md-4 col-md-offset-4">
-      <p>this is a catchphrase</p>
+      <p class="text-center" style="color:rgba(0,0,0,0.7)">Tying together friends in need.</p>
     </div>
+  </div>
+  <form novalidate ng-submit="submitSearch(search)">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="input-group">
+          <input type="text" class="form-control" ng-model="search" placeholder="I need to borrow a...">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button" ng-click="submitSearch(search)"><span class="glyphicon glyphicon-search"></span></button>
+          </span>
+        </div>
+      </div>
+    </div>
+  </form>
+  <div class="row text-center" style="padding-top:10px">
+    <div class="col-md-12">
+      <a href="#"><button class="btn btn-default" type="button">Log In/Sign Up</button></a>
+    </div>
+  </div>
 </div>
