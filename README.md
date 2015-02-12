@@ -1,3 +1,13 @@
-The OpenShift `nodejs` cartridge documentation can be found at:
+# lend-me
 
-http://openshift.github.io/documentation/oo_cartridge_guide.html#nodejs
+This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
+version 0.11.1.
+
+## Build & development
+
+Run `grunt` for building and `grunt serve` for preview.
+
+## Testing
+
+Running `grunt test` will run the unit tests with karma.
+>>>>>>> 771daaa36eb20e6584afc1a767b512a4607eed24
