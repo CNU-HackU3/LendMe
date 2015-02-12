@@ -8,7 +8,7 @@
  * Controller of the lendMeApp
  */
 angular.module('lendMeApp')
-  .controller('MainCtrl', ['$scope','Search', function ($scope, Search) {
+  .controller('MainCtrl', ['$scope','Search', '$location', function ($scope, Search, $location) {
 
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
@@ -21,5 +21,3 @@ angular.module('lendMeApp')
     }
 
   }]);
-
-
