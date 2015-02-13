@@ -102,3 +102,7 @@ body {
 .remove-bullet{
   list-style:none;
 }
+
+.bump-down{
+  margin-top: 10px;
+}

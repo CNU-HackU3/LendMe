@@ -27,7 +27,7 @@ angular
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
       })
-      .when('/results', {
+      .when('/results/:query', {
         templateUrl: 'views/results.html',
         controller: 'ResultsCtrl'
       })

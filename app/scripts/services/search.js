@@ -12,23 +12,26 @@ angular.module('lendMeApp')
     // Service logic
     // ...
 var results;
+var masterQuery;
     
 
     // Public API here
     return {
       listingsMethod: function(query) {
-        console.log(query);
-        $http.get("//lendme-dmnhackathon.rhcloud.com/get/item/keyword/" + query)
-        .success(function(data){
-          console.log(data);
-          results = data;
-          $location.url("results");
-        })
-        .error(function(data){
-          console.log(data);
-          results = data;
-          $location.url("results");
-        })
+
+        // if(!query) {
+        //   var url = $location.url();
+        //   var urlQuery = url[url.length - 1];
+
+        //   if(urlQuery != 'results') {
+        //     query = urlQuery;
+        //   }
+
+        // }
+
+        $location.url("results/" + query);
+
+        return $http.get("//lendme-dmnhackathon.rhcloud.com/get/item/keyword/" + query)
       },
       getResults: function(){
         return results;
